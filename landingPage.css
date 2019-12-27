@@ -3,7 +3,11 @@ html {
 }
 
 body {
-  padding-top: 56px;
+  padding: 64px;
+}
+
+.navbar {
+  font-size: 15px;
 }
 
 .navbar img {
@@ -11,9 +15,26 @@ body {
   height: auto;
 }
 
+.applynow_home {
+  margin: 0px 15px 15px 15px;
+}
+
+.applynow_home a {
+  margin: 15px;
+  padding: 10px;
+  border: 5px;
+  font-size: 15px;
+  color: #ff9e1b;
+}
+
+.card_style_1_con {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+
 .jumbotron {
-  background: url("https://likelion.net/assets/home/om-02-7cf5a9b8b6c5c612b4a190a3c025d626b92f06cecc458c0304936e9516bde213.png")
-    no-repeat center;
+  /* background: url("./img/works_header_img.jpg") no-repeat center; */
   background-size: cover;
   width: 100%;
   height: auto;

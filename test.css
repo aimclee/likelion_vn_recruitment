@@ -1,0 +1,269 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  font-size:15px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 768px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 25px 20px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+@media (max-width:768px){
+  .header li a {
+    padding: 7px 20px;
+  }
+}
+
+
+#main {
+  padding-bottom: 0px;
+  border-bottom: 1px solid black;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.sub_view {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.banner_con {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.detail_con {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar img {
+  max-width: 150px;
+  height: auto;
+}
+
+.applynow_home {
+  margin: 0px 15px 15px 15px;
+}
+
+.applynow_home a {
+  margin: 15px;
+  padding: 10px;
+  border: 5px;
+  font-size: 15px;
+  color: #ff9e1b;
+}
+
+
+
+
+.sns {
+  padding-bottom: 20px;
+}
+
+.sns i {
+  padding: 1px;
+  margin: 10px;
+}
+
+
+
+.btn-primary {
+  background-color: #f6921e;
+  border-color: #f6921e;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  background-color: #f6921e;
+  border-color: #f6921e;
+}
+
+.card-img-top {
+  height: 60%;
+}
+
+@media screen and (max-width: 767) {
+  .contacts {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width:991px){
+  .contact{
+    border-top:1px solid black;
+  }
+}
+
+@media screen and (max-width: 490) {
+  .applynow_title {
+    font-size: 1rem;
+  }
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+footer{
+  display: flex;
+  justify-content: center;
+}

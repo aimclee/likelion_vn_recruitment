@@ -63,7 +63,7 @@ a {
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
-  float: right;
+  /* float: right; */
   padding: 28px 20px;
   position: relative;
   user-select: none;
@@ -221,18 +221,6 @@ a {
   height: auto;
 }
 
-/* @media screen and (max-width: 535) {
-  .applyimgdesc {
-    vertical-align: middle;
-  }
-} */
-
-/* @media screen and (max-width: 445) {
-  .applyimgdescsubsub {
-    vertical-align: middle;
-  }
-} */
-
 @media screen and (max-width: 445) {
   .applynow {
     display: grid;
@@ -252,20 +240,6 @@ a {
   }
 }
 
-
-
-/* 300~535 : 1 column으로 나오게 구성하자. */
-
-/* .applyimgdesc{
-  display: grid;
-}
-
-@media (max-width:535px){
-  .applyimgdesc{
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-  }
-} */
 
 .left_line.design {
   width: calc(100% - 215px);
